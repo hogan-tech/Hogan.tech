@@ -1,0 +1,16 @@
+body {
+    background-color: beige;
+}
+
+img {
+    height: 500px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#title{
+    font-size: 30px;
+}
