@@ -18,21 +18,23 @@ export default class StarRating extends Component {
         this.change = this.change.bind(this);
     }
 
-    change(starSelected){
-        this.setState({starSelected});
+    change(starSelected) {
+        this.setState({ starSelected });
     }
 
-    render(){
-        const {totalStars} = this.props;
-        const {starSelected} = this.state;
+    render() {
+        const { totalStars } = this.props;
+        const { starSelected } = this.state;
         return (
             <div>
-                {[...Array(totalStars)].map((n,i)=>{
-                    <Star 
-                        key={i} 
-                        selected={i < starSelected} 
-                        onClick={()=>this.change(i+1)}
-                    />
+                {[...Array(totalStars)].map((n, i) => {
+                    return (
+                        <Star
+                            key={i}
+                            selected={i < starSelected}
+                            onClick={() => this.change(i + 1)}
+                        />
+                    )
                 })}
                 <p>
                     {starSelected} of {totalStars} stars
