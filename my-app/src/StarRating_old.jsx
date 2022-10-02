@@ -6,7 +6,6 @@ const Star = ({ selected = true }) => (
     <FaStar color={selected ? 'red' : 'gray'}></FaStar>
 )
 
-const createArray = length => [...Array(length)];
 
 
 export default class StarRating extends Component {

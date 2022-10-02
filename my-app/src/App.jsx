@@ -1,7 +1,7 @@
 import React from 'react'
-import StarRating from './StarRating'
+import EffectComponent from './EffectComponent'
 
 
 export default function App() {
-    return <StarRating></StarRating>
+    return <EffectComponent></EffectComponent>
 }
